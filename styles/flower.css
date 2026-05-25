@@ -61,16 +61,25 @@ main{
     font-size: 16px;
     color: #8987A1;
 }
+.nav-link:hover{
+    color: #E95A08;
+}
 .nav-link.home{
     color: #252432;
     font-weight: bold;
     font-size: 16px;
+}
+.nav-link.home:hover{
+    color: #E95A08;
 }
 .nav-link-cart{
     text-decoration: none;
     font-weight: 400;
     font-size: 16px;
     color: #000000;
+}
+.nav-link-cart:hover{
+    color: #E95A08;
 }
 /* banner styles */
 .banner{
@@ -273,7 +282,9 @@ main{
     color: #FFFFFF;
     width: 100%;
     max-width: 800px;
-    padding: 0 20px;  
+    padding: 0 20px;
+    /* margin-bottom: 193px;  
+    margin-top: 199px; */
 }
 .join-content h2 {
     font-size: 50px;
@@ -302,81 +313,63 @@ main{
     gap: 10px;
     height: auto; 
 }
+/* footer styles */
 .footer {
-            background: #fff;
-            padding: 60px 150px 40px;
-        }
- 
-        .footer-inner {
-            max-width: 1140px;
-            margin: 0 auto;
-            display: flex;
-            align-items: flex-start;
-            justify-content: space-between;
-            gap: 40px;
-        }
- 
-        /* Left: logo + tagline */
-        .footer-brand {
-            max-width: 200px;
-        }
- 
-        .footer-logo {
-            width: 135px;
-            margin-bottom: 16px;
-        }
- 
-        .footer-brand p {
-            font-size: 14px;
-            color: rgba(0,0,0,0.5);
-            line-height: 1.6;
-        }
- 
-        /* Nav columns */
-        .footer-links {
-            display: flex;
-            gap: 80px;
-        }
- 
-        .footer-col ul {
-            list-style: none;
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
- 
-        .footer-col ul li a {
-            text-decoration: none;
-            font-size: 16px;
-            color: #252432;
-            font-weight: 400;
-        }
- 
-        .footer-col ul li a:hover { color: #E95A08; }
- 
-        /* Social */
-        .footer-social {
-            display: flex;
-            gap: 16px;
-            align-items: center;
-        }
- 
-        .social-icon {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #fff;
-            font-size: 18px;
-            text-decoration: none;
-        }
- 
-        .si-linkedin { background: #0A66C2; }
-        .si-x        { background: #000;    }
-        .si-facebook { background: #1877F2; }
-        .si-youtube  { background: #FF0000; }
+    background: #FFFFFF;
+    padding: 50px 160px;
+}
+.footer-inner {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 48px;
+}
+.footer-brand {
+    max-width: 359px;
+}
+.footer-logo {
+    width: 135px;
+    margin-bottom: 16px;
+}
+.footer-brand p {
+    font-size: 22px;
+}
+.footer-links {
+    display: flex;
+    gap: 111px;
+}
+.footer-col ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.footer-col ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    color: #6B7280;
+}
+.footer-col ul li a:hover { 
+    color: #E95A08; 
+}
+.footer-social {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+.social-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+}
 /* responsive media query */
 @media screen and (max-width: 576px) {
     /* shared style */
@@ -523,5 +516,40 @@ main{
     }
     .latest-deal-overlay.big-overlay a{
         font-size: 16px;
+    }
+    /* join styles */
+    .join-section {
+        margin-top: 44px;
+        height: 275px;
+    }
+    .join-content {
+        max-width: 320px;
+        padding: 0 20px;
+    }
+    .join-content h2 {
+        font-size: 20px;
+        margin-bottom: 23px;
+    }
+    .join-form input {
+        width: 218px;
+    }
+    /* footer styles */
+    .footer {
+        padding: 50px 160px 50px 20px;
+    }
+    .footer-inner {
+        max-width: 393px;  
+        flex-direction: column;
+        gap: 25px;
+    }
+    .footer-logo {
+        width: 180px;
+    }
+    .footer-brand p {
+        font-size: 16px;
+    }
+    .footer-links {
+        flex-direction: column;
+        gap: 20px;
     }
 }
